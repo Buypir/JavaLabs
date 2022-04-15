@@ -1,20 +1,19 @@
-package ua.lviv.iot.lab2.models;
+package ua.lviv.iot.lab3.models;
 
 public class SportWear {
     private String name;
     private int quantity;
     private String origin;
     private String color;
-    private int priceInUah;
+    private double priceInUah;
     private String sex;
     private String material;
     private boolean isAdult;
     private String brand;
     private float percentageOfCotton;
 
-    public SportWear(String name, int quantity, String origin, String color, int priceInUah, String sex, String material,
-                     boolean isAdult, String brand, float percentageOfCotton) {
-        this.brand = brand;
+    public SportWear(String name, int quantity, String origin, String color, double priceInUah, String sex,
+                     String material, boolean isAdult, String brand, float percentageOfCotton) {
         this.name = name;
         this.quantity = quantity;
         this.origin = origin;
@@ -22,7 +21,17 @@ public class SportWear {
         this.priceInUah = priceInUah;
         this.sex = sex;
         this.material = material;
+        this.isAdult = isAdult;
+        this.brand = brand;
         this.percentageOfCotton = percentageOfCotton;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getQuantity() {
@@ -49,11 +58,11 @@ public class SportWear {
         this.color = color;
     }
 
-    public int getPriceInUah() {
+    public double getPriceInUah() {
         return priceInUah;
     }
 
-    public void setPriceInUah(int priceInUah) {
+    public void setPriceInUah(double priceInUah) {
         this.priceInUah = priceInUah;
     }
 
@@ -81,14 +90,6 @@ public class SportWear {
         isAdult = adult;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getBrand() {
         return brand;
     }
@@ -104,8 +105,6 @@ public class SportWear {
     public void setPercentageOfCotton(float percentageOfCotton) {
         this.percentageOfCotton = percentageOfCotton;
     }
-
-
     @Override
     public String toString() {
         return
@@ -119,5 +118,15 @@ public class SportWear {
                         ", percentage of cotton: " + percentageOfCotton +
                         "%, isAdult:" + isAdult + ", ";
 
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }

@@ -1,15 +1,14 @@
-package ua.lviv.iot.lab2.models;
+package ua.lviv.iot.lab3.models;
 
-public class Sneakers extends SportWear {
+public class Sneakers extends SportWear{
     private int sizeInCentimeters;
     private String soleMaterial;
     private String colorOfLaces;
 
-
-    public Sneakers(int quantity, String origin, String color,
-                    int priceInUan, String sex, String material, String name, String brand, float percentageOfCotton,
-                    boolean isAdult, int sizeInCentimeters, String soleMaterial, String colorOfLaces) {
-        super(name, quantity, origin, color, priceInUan, sex, material, isAdult, brand, percentageOfCotton);
+    public Sneakers(String name, int quantity, String origin, String color, double priceInUah, String sex, String material,
+                    boolean isAdult, String brand, float percentageOfCotton, int sizeInCentimeters, String soleMaterial,
+                    String colorOfLaces) {
+        super(name, quantity, origin, color, priceInUah, sex, material, isAdult, brand, percentageOfCotton);
         this.sizeInCentimeters = sizeInCentimeters;
         this.soleMaterial = soleMaterial;
         this.colorOfLaces = colorOfLaces;
@@ -38,7 +37,6 @@ public class Sneakers extends SportWear {
     public void setColorOfLaces(String colorOfLaces) {
         this.colorOfLaces = colorOfLaces;
     }
-
     @Override
     public String toString() {
         return "[" + super.toString() +
@@ -47,3 +45,4 @@ public class Sneakers extends SportWear {
                 ", colorOfLaces:" + colorOfLaces + "]";
     }
 }
+
