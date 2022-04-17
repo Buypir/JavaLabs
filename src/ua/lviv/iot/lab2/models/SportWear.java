@@ -1,5 +1,4 @@
-package ua.lviv.iot.lab3.models;
-
+package ua.lviv.iot.lab2.models;
 public class SportWear {
     private String name;
     private int quantity;
@@ -105,6 +104,7 @@ public class SportWear {
     public void setPercentageOfCotton(float percentageOfCotton) {
         this.percentageOfCotton = percentageOfCotton;
     }
+
     @Override
     public String toString() {
         return
@@ -116,17 +116,7 @@ public class SportWear {
                         " uah, sex:" + sex +
                         ", material:" + material +
                         ", percentage of cotton: " + percentageOfCotton +
-                        "%, isAdult:" + isAdult + ", ";
+                        "%, isAdult:" + isAdult ;
 
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
     }
 }

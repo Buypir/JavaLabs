@@ -1,4 +1,4 @@
-package ua.lviv.iot.lab3.models;
+package ua.lviv.iot.lab2.models;
 
 public class ThermalUnderwear extends SportWear{
     private boolean isTightFitting;
@@ -19,8 +19,8 @@ public class ThermalUnderwear extends SportWear{
     }
     @Override
     public String toString() {
-        return "[" + super.toString() +
-                "isTightFitting:" + isTightFitting + "]\n";
+        return "\n" + super.toString() +
+                "isTightFitting:" + isTightFitting ;
 
 
     }

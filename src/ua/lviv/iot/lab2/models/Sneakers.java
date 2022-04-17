@@ -1,5 +1,4 @@
-package ua.lviv.iot.lab3.models;
-
+package ua.lviv.iot.lab2.models;
 public class Sneakers extends SportWear{
     private int sizeInCentimeters;
     private String soleMaterial;
@@ -39,10 +38,9 @@ public class Sneakers extends SportWear{
     }
     @Override
     public String toString() {
-        return "[" + super.toString() +
+        return "\n" + super.toString() +
                 "sizeInCentimeters:" + sizeInCentimeters +
                 ", soleMaterial:" + soleMaterial +
-                ", colorOfLaces:" + colorOfLaces + "]";
+                ", colorOfLaces:" + colorOfLaces ;
     }
 }
-
